@@ -1,0 +1,93 @@
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 3px royalblue;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.infoBody {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.temp {
+  border-bottom: 1px solid rgb(14, 60, 197);
+  padding: 5px;
+  border-radius: 25px;
+}
+.date {
+  border-bottom: 1px solid rgba(65, 225, 134, 0.999);
+  padding: 10px;
+  border-radius: 25px;
+}
+.delete {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 20px;
+  border-radius: 7px;
+  padding-left: 1px;
+  background-color: rgb(255, 99, 71);
+  border: none;
+  cursor: pointer;
+}
+.delete:hover {
+  background-color: rgb(134, 25, 6);
+}
+.edit {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 20px;
+  border-radius: 7px;
+  padding-left: 1px;
+  background-color: lightgreen;
+  border: none;
+  cursor: pointer;
+}
+.edit:hover {
+  background-color: rgb(31, 154, 31);
+}
+.infoBody input {
+  border-radius: 25px;
+  padding: 5px;
+  width: 100px;
+}
+@media (min-width: 1200px) {
+  .cardBody {
+    width: 350px;
+    height: 150px;
+  }
+
+  .delete {
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 20px;
+  }
+
+  .edit {
+    top: 15px;
+    right: 50px;
+    width: 40px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  background-color: rgba(100, 124, 196, 0.397);
+  padding: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: 4px 18px 18px -10px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 4px 18px 18px -10px rgba(66, 68, 90, 1);
+  box-shadow: 4px 18px 18px -10px rgba(66, 68, 90, 1);
+  z-index: 999;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.link:hover {
+  color: black;
+  border-bottom: 1px solid royalblue ;
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    width: 800px;
+    top: 0;
+    bottom: 90%;
+  }
+}
